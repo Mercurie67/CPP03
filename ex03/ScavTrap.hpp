@@ -6,12 +6,12 @@
 class ScavTrap : virtual public ClapTrap
 {
     private:
-        bool Guarding;
+        bool _guarding;
     public:
 
     //Constructors
         ScavTrap(void);
-        ScavTrap(std::string name);
+        ScavTrap(std::string _name);
         ScavTrap(const ScavTrap& other);
 
     //Destructors

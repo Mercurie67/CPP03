@@ -3,17 +3,17 @@
 //Constructors
 FragTrap::FragTrap(void) : ClapTrap()
 {
-    HitPoints = 100;
-    EnergyPoints = 100;
-    AttackDamage = 30;
+    _hitPoints = 100;
+    _energyPoints = 100;
+    _attackDamage = 30;
     std::cout << "FragTrap Default constructor called" << std::endl;
 }
 
-FragTrap::FragTrap(std::string name) : ClapTrap(name)
+FragTrap::FragTrap(std::string _name) : ClapTrap(_name)
 {
-    HitPoints = 100;
-    EnergyPoints = 100;
-    AttackDamage = 30;
+    _hitPoints = 100;
+    _energyPoints = 100;
+    _attackDamage = 30;
     std::cout << "FragTrap Default constructor called with atributes" << std::endl;
 }
 
@@ -34,10 +34,10 @@ FragTrap &FragTrap::operator=(const FragTrap &other)
     std::cout << "FragTrap Assignment operator called" << std::endl;
     if(this != &other)
     {
-        this->name = other.name;
-        this->HitPoints = other.HitPoints;
-        this->EnergyPoints = other.EnergyPoints;
-        this->AttackDamage = other.AttackDamage;
+        this->_name = other._name;
+        this->_hitPoints = other._hitPoints;
+        this->_energyPoints = other._energyPoints;
+        this->_attackDamage = other._attackDamage;
     }
     return (*this);
 }
@@ -45,7 +45,7 @@ FragTrap &FragTrap::operator=(const FragTrap &other)
 // Public Methods
 void FragTrap::highFivesGuys(void)
 {
-    std::cout << "FragTrap " << this->name << ": Do you want a high five?\n\t*CLAP*\tThere you go." << std::endl;
+    std::cout << "FragTrap " << this->_name << ": Do you want a high five?\n\t*CLAP*\tThere you go." << std::endl;
 }
 
 // Getters

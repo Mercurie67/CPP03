@@ -6,11 +6,11 @@
 class DiamondTrap : public ScavTrap, public FragTrap
 {
     private:
-        std::string name;
+        std::string _name;
     public:
     //Constructors
         DiamondTrap(void);
-        DiamondTrap(std::string name);
+        DiamondTrap(std::string _name);
         DiamondTrap(const DiamondTrap& other);
 
     //Destructors
@@ -24,7 +24,7 @@ class DiamondTrap : public ScavTrap, public FragTrap
     //Setters
 
     //Getters
-        std::string getDName(void) const;
+        std::string getD_name(void) const;
         
 };
 

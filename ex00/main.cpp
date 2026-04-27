@@ -5,10 +5,10 @@ int main()
 	ClapTrap a;
 	ClapTrap b("Little Clap");
 	
-	std::cout << std::endl << "--- INITIAL STATUS OF " << a.getName() << " ---" << std::endl;
-	std::cout << "Hit points: " << a.getHitPoints() << std::endl;
-	std::cout << "Energy points: " << a.getEnergyPoints() << std::endl;
-	std::cout << "Attack damage: " << a.getAttackDamage() << std::endl << std::endl;
+	std::cout << std::endl << "--- INITIAL STATUS OF " << a.get_name() << " ---" << std::endl;
+	std::cout << "Hit points: " << a.get_hitPoints() << std::endl;
+	std::cout << "Energy points: " << a.get_energyPoints() << std::endl;
+	std::cout << "Attack damage: " << a.get_attackDamage() << std::endl << std::endl;
 
 	a.attack("Other Clap");
 	a.takeDamage(10);
@@ -20,10 +20,10 @@ int main()
 		b.attack("Big Clap");
 	b.beRepaired(3);
 
-	std::cout << std::endl << "--- FINAL STATUS OF " << a.getName() << " ---" << std::endl;
-	std::cout << "Hit points: " << a.getHitPoints() << std::endl;
-	std::cout << "Energy points: " << a.getEnergyPoints() << std::endl;
-	std::cout << "Attack damage: " << a.getAttackDamage() << std::endl;
+	std::cout << std::endl << "--- FINAL STATUS OF " << a.get_name() << " ---" << std::endl;
+	std::cout << "Hit points: " << a.get_hitPoints() << std::endl;
+	std::cout << "Energy points: " << a.get_energyPoints() << std::endl;
+	std::cout << "Attack damage: " << a.get_attackDamage() << std::endl;
 	
 	return 0;
 }

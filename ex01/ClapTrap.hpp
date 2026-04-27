@@ -6,14 +6,14 @@
 class ClapTrap
 {
     protected:
-        std::string name;
-        unsigned int HitPoints;
-        unsigned int EnergyPoints;
-        unsigned int AttackDamage;
+        std::string _name;
+        unsigned int _hitPoints;
+        unsigned int _energyPoints;
+        unsigned int _attackDamage;
     public:
     //Constructors
         ClapTrap(void);
-        ClapTrap(std::string name);
+        ClapTrap(std::string _name);
         ClapTrap(const ClapTrap& other);
 
     //Destructors
@@ -21,8 +21,6 @@ class ClapTrap
 
     //Overload Operators
         ClapTrap &operator=(const ClapTrap &other);
-        bool operator==(const ClapTrap &other) const;
-        bool operator!=(const ClapTrap &other) const;
 
     //Public Methods
         void attack(const std::string &target);
@@ -30,16 +28,16 @@ class ClapTrap
         void beRepaired(unsigned int amount);
 
     //Getters
-        std::string getName(void) const;
-        unsigned int getHitPoints(void) const;
-        unsigned int getEnergyPoints(void) const;
-        unsigned int getAttackDamage(void) const;
+        std::string get_name(void) const;
+        unsigned int get_hitPoints(void) const;
+        unsigned int get_energyPoints(void) const;
+        unsigned int get_attackDamage(void) const;
 
     //Setters
-    //    void setHitPoints(unsigned int HitPoints) ;
-    //    void setEnergyPoints(unsigned int EnergyPoints);
-    //    void setAttackDamage(unsigned int AttackDamage);
-    //    void setName(std::string name);
+    //    void set_hitPoints(unsigned int _hitPoints) ;
+    //    void set_energyPoints(unsigned int _energyPoints);
+    //    void set_attackDamage(unsigned int _attackDamage);
+    //    void set_name(std::string _name);
 };
 
 #endif

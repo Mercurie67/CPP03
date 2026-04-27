@@ -3,25 +3,25 @@
 //Constructors
 ScavTrap::ScavTrap(void) : ClapTrap()
 {
-    HitPoints = 100;
-    EnergyPoints = 50;
-    AttackDamage = 20;
-    Guarding = false;
+    _hitPoints = 100;
+    _energyPoints = 50;
+    _attackDamage = 20;
+    _guarding = false;
     std::cout << "ScavTrap Default constructor called" << std::endl;
 }
 
-ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
+ScavTrap::ScavTrap(std::string _name) : ClapTrap(_name)
 {
-    HitPoints = 100;
-    EnergyPoints = 50;
-    AttackDamage = 20;
-    Guarding = false;
+    _hitPoints = 100;
+    _energyPoints = 50;
+    _attackDamage = 20;
+    _guarding = false;
     std::cout << "ScavTrap Default constructor called with atributes" << std::endl;
 }
 
 ScavTrap::ScavTrap(const ScavTrap &other) : ClapTrap(other)
 {
-    Guarding = false;
+    _guarding = false;
     std::cout << "ScavTrap Copy constructor called" << std::endl;
 }
 
@@ -37,11 +37,11 @@ ScavTrap &ScavTrap::operator=(const ScavTrap &other)
     std::cout << "ScavTrap Assignment operator called" << std::endl;
     if(this != &other)
     {
-        this->name = other.name;
-        this->HitPoints = other.HitPoints;
-        this->EnergyPoints = other.EnergyPoints;
-        this->AttackDamage = other.AttackDamage;
-        this->Guarding = other.Guarding;
+        this->_name = other._name;
+        this->_hitPoints = other._hitPoints;
+        this->_energyPoints = other._energyPoints;
+        this->_attackDamage = other._attackDamage;
+        this->_guarding = other._guarding;
     }
     return (*this);
 }
@@ -49,30 +49,31 @@ ScavTrap &ScavTrap::operator=(const ScavTrap &other)
 //Public Methods
 void ScavTrap::attack(const std::string &target)
 {
-    if(EnergyPoints == 0 || HitPoints == 0)
+    if(_energyPoints == 0 || _hitPoints == 0)
     {
-        std::cout << "Scavtrap " << name << " doesn't have enough energy or hit points to attack!" << std::endl;
+        std::cout << "Scavtrap " << _name << " doesn't have enough energy or hit points to attack!" << std::endl;
         return;
     }
-    std::cout << "Scavtrap " << name << " attacks " << target << ", causing " << AttackDamage << " points of damage" << std::endl;
-    EnergyPoints--;
+    std::cout << "Scavtrap " << _name << " attacks " << target << ", causing " << _attackDamage << " points of damage" << std::endl;
+    _energyPoints--;
 }
 
 void ScavTrap::guardGate()
 {
-    if(Guarding == false)
+    if(_guarding == false)
     {
-        Guarding = true;
-        std::cout << "ScavTrap " << name << " is entering guardGate mode" << std::endl;
+        _guarding = true;
+        std::cout << "ScavTrap " << _name << " is entering guardGate mode" << std::endl;
+        return ;
     }
-    std::cout << "ScavTrap " << name << " is already in guardGate mode" << std::endl;
+    std::cout << "ScavTrap " << _name << " is already in guardGate mode" << std::endl;
 }
 
 //Getter
 
 bool ScavTrap::getGuarding()
 {
-    return Guarding;
+    return _guarding;
 }
 
 //Setter
