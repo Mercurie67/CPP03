@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: medel-ca <medel-ca@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/01 15:21:04 by medel-ca          #+#    #+#             */
+/*   Updated: 2026/05/01 15:50:56 by medel-ca         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "DiamondTrap.hpp"
 
 int main()
@@ -6,10 +18,10 @@ int main()
 		DiamondTrap b("Little Diamond");
 
 		std::cout << "\n### TESTING DIAMONDTRAP ###" << std::endl;	
-		std::cout << std::endl << "--- INITIAL STATUS OF " << b.getD_name() << " ---" << std::endl;
-		std::cout << "Hit points: " << b.get_hitPoints() << std::endl;
-		std::cout << "Energy points: " << b.get_energyPoints() << std::endl;
-		std::cout << "Attack damage: " << b.get_attackDamage() << std::endl << std::endl;
+		std::cout << std::endl << "--- INITIAL STATUS OF " << b.getDname() << " ---" << std::endl;
+		std::cout << "Hit points: " << b.getHitPoints() << std::endl;
+		std::cout << "Energy points: " << b.getEnergyPoints() << std::endl;
+		std::cout << "Attack damage: " << b.getAttackDamage() << std::endl << std::endl;
 
 		b.attack("Other Clap");
 		b.takeDamage(10);
@@ -22,10 +34,10 @@ int main()
 		b.beRepaired(3);
 		b.whoAmI();
 
-		std::cout << std::endl << "--- FINAL STATUS OF " << b.getD_name() << " ---" << std::endl;
-		std::cout << "Hit points: " << b.get_hitPoints() << std::endl;
-		std::cout << "Energy points: " << b.get_energyPoints() << std::endl;
-		std::cout << "Attack damage: " << b.get_attackDamage() << std::endl << std::endl;
+		std::cout << std::endl << "--- FINAL STATUS OF " << b.getDname() << " ---" << std::endl;
+		std::cout << "Hit points: " << b.getHitPoints() << std::endl;
+		std::cout << "Energy points: " << b.getEnergyPoints() << std::endl;
+		std::cout << "Attack damage: " << b.getAttackDamage() << std::endl << std::endl;
 	}
 	std::cout << std::endl;
 	{
@@ -37,8 +49,8 @@ int main()
 		Pink_diamons.beRepaired(10);
 		Blue_diamond.beRepaired(5);
 		
-		std::cout << Pink_diamons.getD_name() << " has " << Pink_diamons.get_hitPoints() << " hit points" << std::endl;
-		std::cout << Blue_diamond.getD_name() << " has " << Blue_diamond.get_hitPoints() << " hit points" << std::endl;
+		std::cout << Pink_diamons.getDname() << " has " << Pink_diamons.getHitPoints() << " hit points" << std::endl;
+		std::cout << Blue_diamond.getDname() << " has " << Blue_diamond.getHitPoints() << " hit points" << std::endl;
 ;
 		Blue_diamond.whoAmI();
 		Blue_diamond.guardGate();

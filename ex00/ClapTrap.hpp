@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ClapTrap.hpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: medel-ca <medel-ca@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/01 15:18:39 by medel-ca          #+#    #+#             */
+/*   Updated: 2026/05/01 15:44:37 by medel-ca         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef CLAPTRAP_HPP
 # define CLAPTRAP_HPP
 # include <iostream>
@@ -13,7 +25,7 @@ class ClapTrap
     public:
     //Constructors
         ClapTrap(void);
-        ClapTrap(std::string _name);
+        ClapTrap(std::string name);
         ClapTrap(const ClapTrap& other);
     
     //Destructors
@@ -28,10 +40,10 @@ class ClapTrap
         void beRepaired(unsigned int amount);
 
     //Getter
-        std::string get_name(void) const;
-        unsigned int get_hitPoints(void) const;
-        unsigned int get_energyPoints(void) const;
-        unsigned int get_attackDamage(void) const;
+        std::string getName(void) const;
+        unsigned int getHitPoints(void) const;
+        unsigned int getEnergyPoints(void) const;
+        unsigned int getAttackDamage(void) const;
 
     //Seter
 };

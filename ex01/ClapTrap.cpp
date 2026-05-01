@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ClapTrap.cpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: medel-ca <medel-ca@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/01 15:19:27 by medel-ca          #+#    #+#             */
+/*   Updated: 2026/05/01 15:44:52 by medel-ca         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ClapTrap.hpp"
 
 //Constructors
@@ -6,7 +18,7 @@ ClapTrap::ClapTrap(void) : _name("default"), _hitPoints(10), _energyPoints(10), 
     std::cout << "ClapTrap Default constructor called" << std::endl;
 }
 
-ClapTrap::ClapTrap(std::string _name) : _name(_name), _hitPoints(10), _energyPoints(10), _attackDamage(0)
+ClapTrap::ClapTrap(std::string name) : _name(name), _hitPoints(10), _energyPoints(10), _attackDamage(0)
 {
     std::cout << "ClapTrap Default constructor called with atributes" << std::endl;
 }
@@ -75,21 +87,21 @@ void ClapTrap::beRepaired(unsigned int amount)
 }
 
 //Getters
-std::string ClapTrap::get_name(void) const
+std::string ClapTrap::getName(void) const
 {
     return(_name);
 }
 
-unsigned int ClapTrap::get_hitPoints(void) const
+unsigned int ClapTrap::getHitPoints(void) const
 {
     return (_hitPoints);
 }
 
-unsigned int ClapTrap::get_energyPoints(void) const
+unsigned int ClapTrap::getEnergyPoints(void) const
 {
     return (_energyPoints);
 }
-unsigned int ClapTrap::get_attackDamage(void) const
+unsigned int ClapTrap::getAttackDamage(void) const
 {
     return (_attackDamage);
 }

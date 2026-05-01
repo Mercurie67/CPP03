@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   DiamondTrap.hpp                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: medel-ca <medel-ca@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/01 15:20:53 by medel-ca          #+#    #+#             */
+/*   Updated: 2026/05/01 15:47:48 by medel-ca         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef DIAMONDTRAP_HPP
 # define DIAMONDTRAP_HPP
 #include "ScavTrap.hpp"
@@ -10,7 +22,7 @@ class DiamondTrap : public ScavTrap, public FragTrap
     public:
     //Constructors
         DiamondTrap(void);
-        DiamondTrap(std::string _name);
+        DiamondTrap(std::string name);
         DiamondTrap(const DiamondTrap& other);
 
     //Destructors
@@ -24,7 +36,7 @@ class DiamondTrap : public ScavTrap, public FragTrap
     //Setters
 
     //Getters
-        std::string getD_name(void) const;
+        std::string getDname(void) const;
         
 };
 

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   FragTrap.hpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: medel-ca <medel-ca@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/01 15:20:15 by medel-ca          #+#    #+#             */
+/*   Updated: 2026/05/01 15:46:12 by medel-ca         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef FRAGTRAP_HPP
 # define FRAGTRAP_HPP
 
@@ -8,7 +20,7 @@ class FragTrap : public ClapTrap
     public:
     //Constructors
         FragTrap(void);
-        FragTrap(std::string _name);
+        FragTrap(std::string name);
         FragTrap(const FragTrap& other);
 
     //Destructors

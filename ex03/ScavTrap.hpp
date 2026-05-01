@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: medel-ca <medel-ca@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/01 15:21:23 by medel-ca          #+#    #+#             */
+/*   Updated: 2026/05/01 15:48:44 by medel-ca         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef SCAVTRAP_HPP
 # define SCAVTRAP_HPP
 
@@ -11,7 +23,7 @@ class ScavTrap : virtual public ClapTrap
 
     //Constructors
         ScavTrap(void);
-        ScavTrap(std::string _name);
+        ScavTrap(std::string name);
         ScavTrap(const ScavTrap& other);
 
     //Destructors

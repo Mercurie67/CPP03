@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ScavTrap.cpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: medel-ca <medel-ca@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/01 15:19:55 by medel-ca          #+#    #+#             */
+/*   Updated: 2026/05/01 15:45:25 by medel-ca         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ScavTrap.hpp"
 
 //Constructors
@@ -10,7 +22,7 @@ ScavTrap::ScavTrap(void) : ClapTrap()
     std::cout << "ScavTrap Default constructor called" << std::endl;
 }
 
-ScavTrap::ScavTrap(std::string _name) : ClapTrap(_name)
+ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
 {
     _hitPoints = 100;
     _energyPoints = 50;

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   FragTrap.cpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: medel-ca <medel-ca@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/01 15:20:12 by medel-ca          #+#    #+#             */
+/*   Updated: 2026/05/01 15:46:19 by medel-ca         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "FragTrap.hpp"
 
 //Constructors
@@ -9,7 +21,7 @@ FragTrap::FragTrap(void) : ClapTrap()
     std::cout << "FragTrap Default constructor called" << std::endl;
 }
 
-FragTrap::FragTrap(std::string _name) : ClapTrap(_name)
+FragTrap::FragTrap(std::string name) : ClapTrap(name)
 {
     _hitPoints = 100;
     _energyPoints = 100;
