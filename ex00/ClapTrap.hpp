@@ -6,7 +6,7 @@
 /*   By: medel-ca <medel-ca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/01 15:18:39 by medel-ca          #+#    #+#             */
-/*   Updated: 2026/05/01 15:44:37 by medel-ca         ###   ########.fr       */
+/*   Updated: 2026/05/02 13:18:05 by medel-ca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class ClapTrap
     //Constructors
         ClapTrap(void);
         ClapTrap(std::string name);
-        ClapTrap(const ClapTrap& other);
+        ClapTrap(const ClapTrap &other);
     
     //Destructors
         ~ClapTrap();

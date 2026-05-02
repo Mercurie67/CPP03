@@ -6,7 +6,7 @@
 /*   By: medel-ca <medel-ca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/01 15:20:34 by medel-ca          #+#    #+#             */
-/*   Updated: 2026/05/01 15:46:38 by medel-ca         ###   ########.fr       */
+/*   Updated: 2026/05/02 13:27:13 by medel-ca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,12 +61,17 @@ ScavTrap &ScavTrap::operator=(const ScavTrap &other)
 //Public Methods
 void ScavTrap::attack(const std::string &target)
 {
-    if(_energyPoints == 0 || _hitPoints == 0)
+    if(_energyPoints == 0)
     {
-        std::cout << "Scavtrap " << _name << " doesn't have enough energy or hit points to attack!" << std::endl;
+        std::cout << "ScavTrap " << _name << " doesn't have enough Energy to attack!" << std::endl;
         return;
     }
-    std::cout << "Scavtrap " << _name << " attacks " << target << ", causing " << _attackDamage << " points of damage" << std::endl;
+    else if (_hitPoints == 0)
+    {
+        std::cout << "ScavTrap " << _name << " doesn't have enough Hit Points to attack!" << std::endl;
+        return;
+    }
+    std::cout << "ScavTrap " << _name << " attacks " << target << ", causing " << _attackDamage << " points of damage" << std::endl;
     _energyPoints--;
 }
 

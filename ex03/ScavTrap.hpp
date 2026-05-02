@@ -6,7 +6,7 @@
 /*   By: medel-ca <medel-ca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/01 15:21:23 by medel-ca          #+#    #+#             */
-/*   Updated: 2026/05/01 15:48:44 by medel-ca         ###   ########.fr       */
+/*   Updated: 2026/05/02 13:29:34 by medel-ca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ class ScavTrap : virtual public ClapTrap
         bool getGuarding();
 
     //Setters
-
 };
 
 #endif

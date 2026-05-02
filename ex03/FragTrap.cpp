@@ -6,7 +6,7 @@
 /*   By: medel-ca <medel-ca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/01 15:20:57 by medel-ca          #+#    #+#             */
-/*   Updated: 2026/05/01 15:47:57 by medel-ca         ###   ########.fr       */
+/*   Updated: 2026/05/02 13:30:18 by medel-ca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,8 +61,4 @@ void FragTrap::highFivesGuys(void)
 }
 
 // Getters
-
 // Setters
-
-
-

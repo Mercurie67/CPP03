@@ -6,7 +6,7 @@
 /*   By: medel-ca <medel-ca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/01 15:19:59 by medel-ca          #+#    #+#             */
-/*   Updated: 2026/05/01 15:44:31 by medel-ca         ###   ########.fr       */
+/*   Updated: 2026/05/02 13:18:42 by medel-ca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class ScavTrap : public ClapTrap
     //Constructors
         ScavTrap(void);
         ScavTrap(std::string name);
-        ScavTrap(const ScavTrap& other);
+        ScavTrap(const ScavTrap &other);
 
     //Destructors
         virtual ~ScavTrap();

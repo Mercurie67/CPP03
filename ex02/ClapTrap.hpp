@@ -6,7 +6,7 @@
 /*   By: medel-ca <medel-ca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/01 15:20:09 by medel-ca          #+#    #+#             */
-/*   Updated: 2026/05/01 15:45:45 by medel-ca         ###   ########.fr       */
+/*   Updated: 2026/05/02 13:22:51 by medel-ca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,12 +44,6 @@ class ClapTrap
         unsigned int getHitPoints(void) const;
         unsigned int getEnergyPoints(void) const;
         unsigned int getAttackDamage(void) const;
-
-    //Setters
-    //    void set_hitPoints(unsigned int _hitPoints) ;
-    //    void set_energyPoints(unsigned int _energyPoints);
-    //    void set_attackDamage(unsigned int _attackDamage);
-    //    void set_name(std::string _name);
 };
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: medel-ca <medel-ca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/01 15:20:12 by medel-ca          #+#    #+#             */
-/*   Updated: 2026/05/01 15:46:19 by medel-ca         ###   ########.fr       */
+/*   Updated: 2026/05/02 13:26:06 by medel-ca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,15 +55,9 @@ FragTrap &FragTrap::operator=(const FragTrap &other)
 }
 
 // Public Methods
-
 void FragTrap::highFivesGuys(void)
 {
     std::cout << "FragTrap " << this->_name << ": Do you want a high five?\n\t*CLAP*\tThere you go." << std::endl;
 }
-
 // Getters
-
 // Setters
-
-
-

@@ -6,7 +6,7 @@
 /*   By: medel-ca <medel-ca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/01 15:20:50 by medel-ca          #+#    #+#             */
-/*   Updated: 2026/05/01 17:00:42 by medel-ca         ###   ########.fr       */
+/*   Updated: 2026/05/02 13:31:11 by medel-ca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,8 +68,4 @@ std::string DiamondTrap::getDname(void) const
 {
      return(_name);
 }
-
 // Setters
-
-
-

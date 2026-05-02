@@ -6,7 +6,7 @@
 /*   By: medel-ca <medel-ca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/01 15:19:31 by medel-ca          #+#    #+#             */
-/*   Updated: 2026/05/01 15:44:34 by medel-ca         ###   ########.fr       */
+/*   Updated: 2026/05/02 13:17:42 by medel-ca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class ClapTrap
     //Constructors
         ClapTrap(void);
         ClapTrap(std::string name);
-        ClapTrap(const ClapTrap& other);
+        ClapTrap(const ClapTrap &other);
 
     //Destructors
         virtual ~ClapTrap();
@@ -46,10 +46,6 @@ class ClapTrap
         unsigned int getAttackDamage(void) const;
 
     //Setters
-    //    void set_hitPoints(unsigned int _hitPoints) ;
-    //    void set_energyPoints(unsigned int _energyPoints);
-    //    void set_attackDamage(unsigned int _attackDamage);
-    //    void set_name(std::string _name);
 };
 
 #endif

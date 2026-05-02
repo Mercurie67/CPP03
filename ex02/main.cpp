@@ -6,7 +6,7 @@
 /*   By: medel-ca <medel-ca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/01 15:20:19 by medel-ca          #+#    #+#             */
-/*   Updated: 2026/05/01 15:50:18 by medel-ca         ###   ########.fr       */
+/*   Updated: 2026/05/02 13:27:34 by medel-ca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,9 @@ int main()
 	{
 		FragTrap f;
 		FragTrap e("Little Frag");
+		FragTrap c(f);
+
+		f = e;
 
 		std::cout << std::endl << "--- INITIAL STATUS OF " << e.getName() << " ---" << std::endl;
 		std::cout << "Hit points: " << e.getHitPoints() << std::endl;

@@ -6,7 +6,7 @@
 /*   By: medel-ca <medel-ca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/01 15:20:15 by medel-ca          #+#    #+#             */
-/*   Updated: 2026/05/01 15:46:12 by medel-ca         ###   ########.fr       */
+/*   Updated: 2026/05/02 13:23:28 by medel-ca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ class FragTrap : public ClapTrap
     void highFivesGuys(void);
 
     //Setters
-
     //Getters
         
 };

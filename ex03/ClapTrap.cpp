@@ -6,7 +6,7 @@
 /*   By: medel-ca <medel-ca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/01 15:20:43 by medel-ca          #+#    #+#             */
-/*   Updated: 2026/05/01 15:47:06 by medel-ca         ###   ########.fr       */
+/*   Updated: 2026/05/02 13:31:24 by medel-ca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,9 +51,14 @@ ClapTrap &ClapTrap::operator=(const ClapTrap &other)
 //Public Methods
 void ClapTrap::attack(const std::string &target)
 {
-    if(_energyPoints == 0 || _hitPoints == 0)
+    if(_energyPoints == 0)
     {
-        std::cout << "Claptrap " << _name << " doesn't have enough energy or hit points to attack!" << std::endl;
+        std::cout << "Claptrap " << _name << " doesn't have enough Energy to attack!" << std::endl;
+        return;
+    }
+    else if (_hitPoints == 0)
+    {
+        std::cout << "Claptrap " << _name << " doesn't have enough Hit Points to attack!" << std::endl;
         return;
     }
     std::cout << "Claptrap " << _name << " attacks " << target << ", causing " << _attackDamage << " points of damage" << std::endl;
@@ -105,21 +110,4 @@ unsigned int ClapTrap::getAttackDamage(void) const
 {
     return (_attackDamage);
 }
-
 //Setters
-/*void ClapTrap::set_hitPoints(unsigned int _hitPoints)
-{
-    this->_hitPoints = _hitPoints;
-}
-void ClapTrap::set_energyPoints(unsigned int _energyPoints)
-{
-     this->_energyPoints = _energyPoints;
-}
-void ClapTrap::set_attackDamage(unsigned int _attackDamage)
-{
-     this->_attackDamage = _attackDamage;
-}
-void ClapTrap::set_name(std::string _name)
-{
-     this->_name = _name;
-}*/

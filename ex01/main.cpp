@@ -6,7 +6,7 @@
 /*   By: medel-ca <medel-ca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/01 15:19:35 by medel-ca          #+#    #+#             */
-/*   Updated: 2026/05/01 15:49:56 by medel-ca         ###   ########.fr       */
+/*   Updated: 2026/05/02 13:21:55 by medel-ca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,11 @@ int main()
 {
 	std::cout << "### TESTING SCAVTRAP ###\n" << std::endl;
 	{
-		ScavTrap c;
-		ScavTrap d("Little Scav");
+		ScavTrap a;
+		ScavTrap c("Big Scav");
+		ScavTrap d(c);
+		
+		a = c;
 
 		std::cout << std::endl << "--- INITIAL STATUS OF " << c.getName() << " ---" << std::endl;
 		std::cout << "Hit points: " << c.getHitPoints() << std::endl;
